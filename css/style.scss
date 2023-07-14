@@ -1,0 +1,88 @@
+//* https: //imagecolorpicker.com/es
+
+:root {
+  --color1: #f99c5c;
+  --color2: #f23913;
+  --color3: #8b160c;
+  --color4: #fff;
+}
+
+body {
+  font-family: fantasy;
+  // background-color: var(--color1);
+  background-image: url(../img/fondo17.jpg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--color4);
+  width: 400px;
+  border-radius: 16px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+
+  overflow: hidden;
+
+  &-header {
+    width: 100%;
+    display: block;
+  }
+
+  &-body {
+    // background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom: 1px solid var(--color2);
+
+    &-contentimg {
+      border: 5px solid var(--color2);
+      border-radius: 50%;
+      background-color: var(--color1);
+      box-shadow: 0px -10px 20px var(--color1);
+
+      margin-top: calc(-60px);
+
+      &-img {
+        padding: 30px;
+      }
+    }
+
+    &-title {
+      font-size: 2rem;
+      text-transform: uppercase;
+
+      span {
+        color: var(--color3);
+      }
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-evenly;
+
+    &-power {
+      text-align: center;
+      margin-bottom: 1.25rem;
+      // border: 1px solid red;
+
+      h3 {
+        // border: 1px solid blue;
+        margin-bottom: 0;
+      }
+
+      &-emoji {
+        // border: 1px solid green;
+        font-size: 2rem;
+      }
+    }
+  }
+}
